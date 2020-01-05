@@ -13,11 +13,13 @@ Style/Documentation:
   Enabled: true
   Exclude:
     - 'test/**/*.rb'
+    - 'db/**/*.rb'
 
 Style/DocumentationMethod:
   Enabled: true
   Exclude:
     - 'test/**/*.rb'
+    - 'db/**/*.rb'
 
 # ==============================================================================
 # Naming
