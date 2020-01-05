@@ -19,27 +19,45 @@ class ActiveRecordPersistenceTest < ActiveSupport::TestCase
   end
 
   test "#interchange_control_numbers" do
-    assert_equal([1, 2, 3], Eddy.data.interchange_control_numbers())
+    assert_equal(
+      [1, 2, 3],
+      Eddy.data.interchange_control_numbers(),
+    )
   end
 
   test "#functional_group_control_numbers" do
-    assert_equal([1, 2], Eddy.data.functional_group_control_numbers("PO"))
+    assert_equal(
+      [1, 2],
+      Eddy.data.functional_group_control_numbers("PO"),
+    )
   end
 
   test "#transaction_set_control_numbers" do
-    assert_equal([1, 2], Eddy.data.transaction_set_control_numbers("850"))
+    assert_equal(
+      [1, 2],
+      Eddy.data.transaction_set_control_numbers("850"),
+    )
   end
 
   test "#add_interchange_control_number" do
-    assert_equal([1, 2, 3, 4], Eddy.data.add_interchange_control_number(4))
+    assert_equal(
+      [1, 2, 3, 4],
+      Eddy.data.add_interchange_control_number(4),
+    )
   end
 
   test "#add_functional_group_control_number" do
-    assert_equal([1, 2], Eddy.data.add_functional_group_control_number(3, "PO"))
+    assert_equal(
+      [1, 2, 3],
+      Eddy.data.add_functional_group_control_number("PO", 3),
+    )
   end
 
   test "#add_transaction_set_control_number" do
-    assert_equal([1, 2, 3], Eddy.data.add_transaction_set_control_number(3, "850"))
+    assert_equal(
+      [1, 2, 3],
+      Eddy.data.add_transaction_set_control_number("850", 3),
+    )
   end
 
 end
