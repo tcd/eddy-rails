@@ -53,7 +53,7 @@ module Eddy
             sent:     sent,
             received: received,
           )
-          return self.functional_group_control_numbers()
+          return self.functional_group_control_numbers(functional_group)
         end
 
         # @param transaction_set_id [String]
@@ -68,7 +68,7 @@ module Eddy
             sent:     sent,
             received: received,
           )
-          return transaction_set_control_numbers()
+          return transaction_set_control_numbers(transaction_set_id)
         end
 
       end
