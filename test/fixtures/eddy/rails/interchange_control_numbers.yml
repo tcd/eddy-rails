@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  control_number: 1
+  received: false
+  sent: false
+
+two:
+  control_number: 2
+  received: false
+  sent: false

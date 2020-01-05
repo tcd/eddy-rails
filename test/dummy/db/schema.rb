@@ -10,9 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_01_04_235410) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "eddy_rails_interchange_control_numbers", force: :cascade do |t|
+    t.integer "control_number", null: false
+    t.boolean "received", default: false
+    t.boolean "sent", default: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["control_number"], name: "index_eddy_rails_interchange_control_numbers_on_control_number", unique: true
+  end
 
 end
