@@ -28,5 +28,13 @@ module Eddy::Rails
         message: "Transaction Set Control Numbers must be unique within a Transaction Set",
       },
     )
+
+    # @!method self.create!()
+    #   @param number [Integer]
+    #   @param t_set [String]
+    #   @param sent [Boolean] (false)
+    #   @param received [Boolean] (false)
+    #   @return [self]
+
   end
 end

@@ -29,5 +29,13 @@ module Eddy::Rails
         message: "Functional Group Control Numbers must be unique within a Functional Group",
       },
     )
+
+    # @!method self.create!()
+    #   @param number [Integer]
+    #   @param f_group [String]
+    #   @param sent [Boolean] (false)
+    #   @param received [Boolean] (false)
+    #   @return [self]
+
   end
 end
