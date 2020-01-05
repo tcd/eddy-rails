@@ -7,6 +7,12 @@ one:
   received: false
 
 two:
+  number: 2
+  f_group: "PO"
+  sent: false
+  received: false
+
+three:
   number: 1
   f_group: "PR"
   sent: false

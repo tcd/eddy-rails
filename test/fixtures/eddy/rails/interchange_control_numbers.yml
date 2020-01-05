@@ -9,3 +9,8 @@ two:
   number: 2
   sent: false
   received: false
+
+three:
+  number: 3
+  sent: false
+  received: false
