@@ -1,6 +1,4 @@
-module Eddy
-  module Rails
-    class InterchangeControlNumber < ApplicationRecord
-    end
+module Eddy::Rails
+  class InterchangeControlNumber < ApplicationRecord
   end
 end

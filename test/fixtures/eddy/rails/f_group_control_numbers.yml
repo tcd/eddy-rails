@@ -2,10 +2,12 @@
 
 one:
   number: 1
+  f_group: "PO"
   received: false
   sent: false
 
 two:
-  number: 2
+  number: 1
+  f_group: "PR"
   received: false
   sent: false
