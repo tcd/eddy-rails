@@ -221,3 +221,6 @@ Style/CommentedKeyword:
 
 Lint/EmptyWhen:
   Enabled: false
+
+Gemspec/OrderedDependencies:
+  Enabled: false
