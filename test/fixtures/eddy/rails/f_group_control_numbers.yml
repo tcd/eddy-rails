@@ -3,11 +3,11 @@
 one:
   number: 1
   f_group: "PO"
-  received: false
   sent: false
+  received: false
 
 two:
   number: 1
   f_group: "PR"
-  received: false
   sent: false
+  received: false

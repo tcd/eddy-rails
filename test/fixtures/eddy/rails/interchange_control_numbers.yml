@@ -2,10 +2,10 @@
 
 one:
   number: 1
-  received: false
   sent: false
+  received: false
 
 two:
   number: 2
-  received: false
   sent: false
+  received: false
