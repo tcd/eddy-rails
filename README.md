@@ -1,35 +1,36 @@
 # Eddy::Rails
 
-Short description and motivation.
+[![Gem](https://img.shields.io/gem/v/eddy-rails)][rubygems]
+[![Build Status](https://travis-ci.org/tcd/eddy-rails.svg?branch=master)][travis-ci]
+[![Coverage Status](https://coveralls.io/repos/github/tcd/eddy-rails/badge.svg?branch=master)][coveralls]
+[![License](https://img.shields.io/github/license/tcd/eddy)][license]
+[![Documentation](http://img.shields.io/badge/docs-rubydoc.info-blue.svg)][docs]
 
-## Usage
+[rubygems]: https://rubygems.org/gems/eddy-rails
+[travis-ci]: https://travis-ci.org/tcd/eddy-rails
+[coveralls]: https://coveralls.io/github/tcd/eddy-rails?branch=master
+[license]: https://github.com/tcd/eddy-rails/blob/master/LICENSE
+[docs]: https://www.rubydoc.info/gems/eddy-rails/1.0.0
 
-How to use my plugin.
+Rails integration for [Eddy](https://github.com/tcd/eddy).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
+gem "eddy"
 gem "eddy-rails"
 ```
 
-And then execute:
+Next, you need to copy & run the migration:
 
-```bash
-bundle
+```sh
+$ rails eddy:install # This will do both
 ```
 
-Or install it yourself as:
+Then, optionally, generate an initializer file:
 
-```bash
-gem install eddy-rails
+```sh
+$ rails generate eddy:install # This will do both
 ```
-
-## Contributing
-
-Contribution directions go here.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
