@@ -1,4 +1,3 @@
-require "eddy"
 require "eddy/rails/engine"
 require "eddy/data/persistence/active_record"
 
