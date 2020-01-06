@@ -1,3 +1,5 @@
+require "eddy"
+
 module Eddy
   module Rails
     class Engine < ::Rails::Engine
