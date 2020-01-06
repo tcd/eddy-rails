@@ -1,4 +1,5 @@
 require "eddy/rails/engine"
+require "eddy/rails/version"
 require "eddy/data/persistence/active_record"
 
 module Eddy

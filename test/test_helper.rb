@@ -1,3 +1,23 @@
+require "simplecov"
+
+formatters = []
+formatters << SimpleCov::Formatter::HTMLFormatter
+if ENV["CI"] == "true"
+  require "coveralls"
+  formatters << Coveralls::SimpleCov::Formatter
+end
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(formatters)
+
+SimpleCov.start do
+  add_filter "/bin/"
+  add_filter "/test/"
+
+  add_group "App", "app"
+  add_group "Lib", "lib"
+
+  track_files "{app,lib}/**/*.rb"
+end
+
 # Configure Rails Environment
 ENV["RAILS_ENV"] = "test"
 
