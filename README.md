@@ -32,5 +32,5 @@ $ rails eddy:install # This will do both
 Then, optionally, generate an initializer file:
 
 ```sh
-$ rails generate eddy:install # This will do both
+$ rails generate eddy:initializer # This will do both
 ```
