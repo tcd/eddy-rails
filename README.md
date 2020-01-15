@@ -10,7 +10,7 @@
 [travis-ci]: https://travis-ci.org/tcd/eddy-rails
 [coveralls]: https://coveralls.io/github/tcd/eddy-rails?branch=master
 [license]: https://github.com/tcd/eddy-rails/blob/master/LICENSE
-[docs]: https://www.rubydoc.info/gems/eddy-rails/1.0.0
+[docs]: https://www.rubydoc.info/gems/eddy-rails/1.1.0
 
 Rails integration for [Eddy](https://github.com/tcd/eddy).
 

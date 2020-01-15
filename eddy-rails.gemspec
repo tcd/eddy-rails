@@ -2,7 +2,7 @@ $LOAD_PATH.push File.expand_path("lib", __dir__)
 
 Gem::Specification.new do |spec|
   spec.name        = "eddy-rails"
-  spec.version     = "1.0.0"
+  spec.version     = "1.1.0"
   spec.authors     = ["Clay Dunston"]
   spec.email       = ["dunstontc@gmail.com"]
   spec.homepage    = "https://github.com/tcd/eddy-rails"
@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
   spec.add_development_dependency "coveralls", "~> 0.8.23"
-  spec.add_development_dependency "eddy", "~> 0.5.0"
+  spec.add_development_dependency "eddy", "~> 0.8.4"
   spec.add_development_dependency "pg"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rails", "~> 6.0.2", ">= 6.0.2.1"

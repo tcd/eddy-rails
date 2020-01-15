@@ -25,13 +25,6 @@ class ActiveRecordPersistenceTest < ActiveSupport::TestCase
     )
   end
 
-  test "#functional_group_control_numbers" do
-    assert_equal(
-      [1, 2],
-      Eddy.data.functional_group_control_numbers("PO"),
-    )
-  end
-
   test "#transaction_set_control_numbers" do
     assert_equal(
       [1, 2],
@@ -43,13 +36,6 @@ class ActiveRecordPersistenceTest < ActiveSupport::TestCase
     assert_equal(
       [1, 2, 3, 4],
       Eddy.data.add_interchange_control_number(4),
-    )
-  end
-
-  test "#add_functional_group_control_number" do
-    assert_equal(
-      [1, 2, 3],
-      Eddy.data.add_functional_group_control_number("PO", 3),
     )
   end
 

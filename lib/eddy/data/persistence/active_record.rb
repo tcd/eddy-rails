@@ -16,12 +16,6 @@ module Eddy
           return Eddy::Rails::InterchangeControlNumber.select(:number).collect(&:number)
         end
 
-        # @param functional_group [String]
-        # @return [Array<Integer>]
-        def functional_group_control_numbers(functional_group)
-          Eddy::Rails::FGroupControlNumber.where(f_group: functional_group).select(:number).collect(&:number)
-        end
-
         # @param transaction_set_id [String]
         # @return [Array<Integer>]
         def transaction_set_control_numbers(transaction_set_id)
@@ -39,21 +33,6 @@ module Eddy
             received: received,
           )
           return self.interchange_control_numbers()
-        end
-
-        # @param functional_group [String]
-        # @param new_ctrl_num [Integer]
-        # @param sent [Boolean] (false)
-        # @param received [Boolean] (false)
-        # @return [Array<Integer>]
-        def add_functional_group_control_number(functional_group, new_ctrl_num, sent: false, received: false)
-          Eddy::Rails::FGroupControlNumber.create!(
-            number:   new_ctrl_num,
-            f_group:  functional_group,
-            sent:     sent,
-            received: received,
-          )
-          return self.functional_group_control_numbers(functional_group)
         end
 
         # @param transaction_set_id [String]

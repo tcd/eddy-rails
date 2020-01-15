@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    eddy-rails (1.0.0)
+    eddy-rails (1.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -76,7 +76,7 @@ GEM
     dry-inflector (0.2.0)
     ecma-re-validator (0.2.0)
       regexp_parser (~> 1.2)
-    eddy (0.5.0)
+    eddy (0.8.4)
       ginny (~> 0.6.3)
       json_schemer (~> 0.2.8)
       thor (~> 1.0.1)
@@ -175,7 +175,7 @@ PLATFORMS
 
 DEPENDENCIES
   coveralls (~> 0.8.23)
-  eddy (~> 0.5.0)
+  eddy (~> 0.8.4)
   eddy-rails!
   pg
   pry
